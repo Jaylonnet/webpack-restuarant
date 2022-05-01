@@ -1,3 +1,5 @@
+import './style.css';
+
 const contentBlock = document.querySelector('#content');
 
 const initialLoad = ((contentBlock) => {
@@ -9,7 +11,7 @@ const initialLoad = ((contentBlock) => {
 
 function createShowcase() {
     const div = document.createElement('div');
-    
+
 };
 
 function createLogo() {
