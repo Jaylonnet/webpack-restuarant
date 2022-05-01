@@ -1,1 +1,1 @@
-console.log("gfffgtest");
+document.querySelector("#content").append(function(){const e=document.createElement("ul"),t=["Home","Menu","Contact"];for(let n of t){const t=document.createElement("li");t.textContent=n,e.appendChild(t)}return e}());
