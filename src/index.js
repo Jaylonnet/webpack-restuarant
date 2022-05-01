@@ -6,6 +6,19 @@ const initialLoad = ((contentBlock) => {
         createNavBar())
 })(contentBlock);
 
+
+function createShowcase() {
+    const div = document.createElement('div');
+    
+};
+
+function createLogo() {
+    const logo = document.createElement('h2');
+    logo.textContent = 'Johnny Johns Pizza';
+    return logo;
+};
+
+
 function createNavBar() {
     const ul = document.createElement('ul');
     const navOptions = ['Home', 'Menu', 'Contact'];
@@ -16,9 +29,3 @@ function createNavBar() {
     };
     return ul;
 };
-
-function createLogo() {
-    const logo = document.createElement('h2');
-    logo.textContent = 'Johnny Johns Pizza';
-    return logo;
-}
