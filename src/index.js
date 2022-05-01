@@ -1,7 +1,9 @@
 const contentBlock = document.querySelector('#content');
 
 const initialLoad = ((contentBlock) => {
-    contentBlock.append(createNavBar())
+    contentBlock.append(
+        createLogo(),
+        createNavBar())
 })(contentBlock);
 
 function createNavBar() {
@@ -15,3 +17,8 @@ function createNavBar() {
     return ul;
 };
 
+function createLogo() {
+    const logo = document.createElement('h2');
+    logo.textContent = 'Johnny Johns Pizza';
+    return logo;
+}
