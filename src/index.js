@@ -3,15 +3,22 @@ import './style.css';
 const contentBlock = document.querySelector('#content');
 
 const initialLoad = ((contentBlock) => {
+    document.body.style.margin = '0';
+    document.body.style.fontFamily = 'sans-serif'
     contentBlock.append(
         createLogo(),
-        createNavBar())
+        createNavBar(),
+        createShowcase())
 })(contentBlock);
 
 
 function createShowcase() {
     const div = document.createElement('div');
-
+    div.classList.add('showcase');
+    const cover = document.createElement('div');
+    cover.classList.add('cover')
+    div.appendChild(cover);
+    return div;
 };
 
 function createLogo() {
@@ -23,6 +30,7 @@ function createLogo() {
 
 function createNavBar() {
     const ul = document.createElement('ul');
+    ul.classList.add('nav-bar')
     const navOptions = ['Home', 'Menu', 'Contact'];
     for (let option of navOptions) {
         const li = document.createElement('li');
