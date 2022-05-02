@@ -2,7 +2,7 @@
     height: 100vh;
     width: 100vw;
     background: url('./pizza-bg.jpg');
-    color: white;
+    color: #ecf0f1;
 }
 
 .cover {
@@ -30,5 +30,5 @@
 }
 
 .logo {
-    font-size: 2.4rem;
+    font-size: 3rem;
 }

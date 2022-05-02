@@ -32,7 +32,7 @@ function createLogo() {
 function createNavBar() {
     const ul = document.createElement('ul');
     ul.classList.add('nav-bar')
-    const navOptions = ['Home', 'Menu', 'Contact'];
+    const navOptions = ['Menu', 'Contact'];
     for (let option of navOptions) {
         const li = document.createElement('li');
         li.textContent = option;
