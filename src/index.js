@@ -6,9 +6,9 @@ const initialLoad = ((contentBlock) => {
     document.body.style.margin = '0';
     document.body.style.fontFamily = 'sans-serif'
     contentBlock.append(
-        createLogo(),
-        createNavBar(),
-        createShowcase())
+        createShowcase());
+    const showcase = document.querySelector('.cover');
+    showcase.append(createLogo(), createNavBar())
 })(contentBlock);
 
 
@@ -24,6 +24,7 @@ function createShowcase() {
 function createLogo() {
     const logo = document.createElement('h2');
     logo.textContent = 'Johnny Johns Pizza';
+    logo.classList.add('reset', 'logo');
     return logo;
 };
 
